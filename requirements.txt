@@ -1,0 +1,53 @@
+# ═══════════════════════════════════════════════════════
+#  LAPD Crime Intelligence — Requirements
+#  Install: pip install -r requirements.txt
+#
+#  GPU note: For RAPIDS (cuDF + cuPy) — install separately:
+#  https://rapids.ai/start.html
+#  conda install -c rapidsai -c nvidia -c conda-forge \
+#      cudf=24.02 cupy cudatoolkit=12.0
+# ═══════════════════════════════════════════════════════
+
+# ── Core data ─────────────────────────────────────────
+numpy>=1.24.0
+pandas>=2.0.0
+pyarrow>=14.0.0       # parquet support
+
+# ── Machine Learning ──────────────────────────────────
+lightgbm>=4.1.0       # primary model (GPU support built-in)
+scikit-learn>=1.3.0
+shap>=0.44.0
+
+# ── Time Series ───────────────────────────────────────
+prophet>=1.1.5
+# OR: pip install neuralprophet  (faster, but optional)
+
+# ── Visualisation ─────────────────────────────────────
+matplotlib>=3.7.0
+seaborn>=0.12.0
+plotly>=5.17.0
+
+# ── Streamlit dashboard ───────────────────────────────
+streamlit>=1.28.0
+streamlit-folium>=0.15.0
+folium>=0.15.0
+
+# ── Progress + CLI ────────────────────────────────────
+tqdm>=4.66.0
+rich>=13.6.0          # beautiful terminal progress (optional but great)
+
+# ── System monitoring ─────────────────────────────────
+psutil>=5.9.0
+GPUtil>=1.4.0         # GPU stats in terminal
+
+# ── Model persistence ────────────────────────────────
+joblib>=1.3.0
+
+# ── Optional: GPU LightGBM ───────────────────────────
+# LightGBM GPU needs OpenCL drivers (included with NVIDIA drivers)
+# No extra pip install needed — just pass device="gpu" in params
+
+# ── Optional: cuDF (RAPIDS) for pandas GPU ops ───────
+# See: https://rapids.ai/start.html
+# cudf-cu12 (for CUDA 12.x)
+# cupy-cuda12x

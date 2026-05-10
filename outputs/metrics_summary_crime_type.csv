@@ -1,0 +1,9 @@
+Metric,CV Mean,CV Std,Test 24-25,Generalisation
+Accuracy,0.4315,0.0016,0.4939,⚠️ Gap
+F1 Macro,0.3826,0.0017,0.4216,✅ Good
+F1 Micro,0.4315,0.0016,0.4939,⚠️ Gap
+F1 Weighted,0.4401,0.0018,0.4894,✅ Good
+Top-3 Acc,0.8307,0.0003,0.846,✅ Good
+Precision (w),0.5345,0.0015,0.5682,✅ Good
+Recall (w),0.4315,0.0016,0.4939,⚠️ Gap
+ROC-AUC (w),0.8574,0.0003,0.8527,✅ Good
