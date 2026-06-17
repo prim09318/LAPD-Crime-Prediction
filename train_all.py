@@ -8,7 +8,7 @@ Usage: python train_all.py <path_to_csv> [--granularity month|week]
 
 import sys
 import time
-import argparse
+import argparsehj
 import platform
 import subprocess
 from pathlib import Path
